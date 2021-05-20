@@ -1,0 +1,27 @@
+{
+  "name": "the-a11y-collection",
+  "version": "1.0.0",
+  "description": "A collection of most important coding rules to an accessible web.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karlbaumhauer/the-a11y-collection.git"
+  },
+  "keywords": [
+    "a11y",
+    "accessibility",
+    "accessible",
+    "web",
+    "coding-standards",
+    "coding-rules"
+  ],
+  "author": "Karl Baumhauer (https://github.com/karlbaumhauer)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/karlbaumhauer/the-a11y-collection/issues"
+  },
+  "homepage": "https://github.com/karlbaumhauer/the-a11y-collection#readme"
+}
