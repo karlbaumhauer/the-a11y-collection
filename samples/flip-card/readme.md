@@ -1,78 +1,90 @@
 # The a11y Collection | Flip Card
 In this example you will learn everything you need to know while implementing a lovely flip card into your website.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestiae facilis officia inventore dolore
-recusandae provident hic earum officiis deleniti iste culpa dolor veniam doloremque incidunt saepe, cum
-laboriosam blanditiis error, magni nobis ut repudiandae. Voluptatum architecto nostrum soluta minus quis
-quisquam, esse explicabo voluptatibus consectetur dolor, vitae voluptas ipsum? Vel repellendus sapiente
-accusantium expedita placeat libero officiis magni pariatur hic facilis quisquam, blanditiis ipsam minus, iste
-eos provident consequatur doloribus aperiam sit! Qui natus dolorum repellendus error eius expedita sapiente
-dolores iste doloribus ea nam incidunt earum facilis exercitationem quis illo sed, minima alias fuga ratione
-neque aut aperiam consequuntur. Blanditiis odit quo repellat aliquam minus quae magnam eos eligendi ad sit
-incidunt hic, distinctio velit aut. Obcaecati porro temporibus exercitationem laborum quidem illum laudantium
-doloribus maiores sed fuga. Asperiores nam voluptatum tenetur, ducimus repudiandae et cum sed! A voluptatum
-amet illo neque, soluta dolore nobis ex unde dolores commodi totam voluptates, illum provident tempore ea
-repellendus corrupti eos, libero dolorem laudantium aspernatur! Quia, assumenda! Dicta hic incidunt
-voluptatibus quae sed ullam recusandae distinctio quis nostrum facere impedit reiciendis quibusdam beatae
-quisquam, molestias mollitia, vero necessitatibus repellendus. At, ipsa fugit quibusdam ullam, commodi porro
-ad adipisci libero, iusto qui provident temporibus omnis! Iure voluptates vitae possimus saepe dicta dolore
-eveniet maxime accusantium deserunt error, laboriosam asperiores suscipit incidunt autem eos sequi? Ad
-tenetur, est delectus quia, accusantium dicta exercitationem, ducimus consequuntur eum magnam unde recusandae
-minus iusto. Fugit at, veritatis nihil doloribus, iusto dolores et illum perspiciatis deserunt nisi
-voluptatum. Accusantium vitae dolor iure neque odio! Eligendi necessitatibus temporibus exercitationem id
-expedita amet et consequatur accusantium! Cum officiis non eveniet dolores provident eligendi iusto
-consequuntur vitae, laudantium cupiditate eius minus esse animi nisi doloribus, sunt ducimus laboriosam
-voluptas tempore voluptate. Ipsam nisi quas vitae sit deleniti explicabo laudantium earum quos exercitationem
-animi quisquam, ad fuga a sed aspernatur totam officia odio tempora nostrum repudiandae consequuntur quibusdam
-eos! Dicta, voluptates aut dolor quod eligendi laboriosam et perferendis enim adipisci saepe minus asperiores
-quis cupiditate beatae vitae culpa nostrum. Reiciendis, rerum dolor totam aliquam sed tenetur dignissimos
-exercitationem accusantium, itaque repellendus cum molestias temporibus commodi ad ipsum nobis pariatur quos
-accusamus rem laborum! Eveniet architecto tenetur ab sapiente consequatur. Quidem culpa molestiae maxime,
-delectus recusandae ad fuga porro consequatur temporibus perspiciatis saepe cumque non deleniti, aperiam odio
-aspernatur illo dolor minus autem perferendis incidunt provident doloremque assumenda. Dignissimos officia
-facilis quod aliquid ad. Quaerat, iure reiciendis! Vel ab mollitia, sit eum rem non consequuntur beatae
-repellendus tenetur. Libero laboriosam aliquam illo quos quod minima obcaecati laudantium, inventore
-reiciendis sed dolore consequatur alias? Soluta facilis hic debitis quaerat vero et eaque dolores dolorum
-expedita tempore! Quae cum, id eum corporis hic quisquam sapiente ex dicta aut velit odit quas repellendus
-sint aliquid ipsa mollitia! Iusto asperiores omnis dolore? Voluptatibus dolor odit itaque repellat dignissimos
-nihil repellendus accusantium adipisci sequi sapiente deleniti at quos in consectetur nesciunt praesentium,
-veniam atque qui deserunt voluptatum. Ullam illum porro unde, mollitia impedit facere laudantium perspiciatis
-eos.
+## HTML
+### Example snippets
+#### HTML
+```html
+<div class="flip-card" role="button" aria-label="click to read more" tabindex="0">
+  <div class="flip-card-inner" tabindex="-1">
+    <div class="flip-card-front" tabindex="-1">
+        <!-- only a spcae as alt-text to indicate screenreaders that image content is nothing important. -->
+      <img src="https://picsum.photos/400/500" alt=" ">
+    </div>
+    <div class="flip-card-back" tabindex="-1">
+      <p tabindex="-1">
+        Some long text which can even be too long for the flip card size and requires scrolling inside the back of the flip card.
+      </p>
+    </div>
+  </div>
+</div>
+```
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestiae facilis officia inventore dolore
-recusandae provident hic earum officiis deleniti iste culpa dolor veniam doloremque incidunt saepe, cum
-laboriosam blanditiis error, magni nobis ut repudiandae. Voluptatum architecto nostrum soluta minus quis
-quisquam, esse explicabo voluptatibus consectetur dolor, vitae voluptas ipsum? Vel repellendus sapiente
-accusantium expedita placeat libero officiis magni pariatur hic facilis quisquam, blanditiis ipsam minus, iste
-eos provident consequatur doloribus aperiam sit! Qui natus dolorum repellendus error eius expedita sapiente
-dolores iste doloribus ea nam incidunt earum facilis exercitationem quis illo sed, minima alias fuga ratione
-neque aut aperiam consequuntur. Blanditiis odit quo repellat aliquam minus quae magnam eos eligendi ad sit
-incidunt hic, distinctio velit aut. Obcaecati porro temporibus exercitationem laborum quidem illum laudantium
-doloribus maiores sed fuga. Asperiores nam voluptatum tenetur, ducimus repudiandae et cum sed! A voluptatum
-amet illo neque, soluta dolore nobis ex unde dolores commodi totam voluptates, illum provident tempore ea
-repellendus corrupti eos, libero dolorem laudantium aspernatur! Quia, assumenda! Dicta hic incidunt
-voluptatibus quae sed ullam recusandae distinctio quis nostrum facere impedit reiciendis quibusdam beatae
-quisquam, molestias mollitia, vero necessitatibus repellendus. At, ipsa fugit quibusdam ullam, commodi porro
-ad adipisci libero, iusto qui provident temporibus omnis! Iure voluptates vitae possimus saepe dicta dolore
-eveniet maxime accusantium deserunt error, laboriosam asperiores suscipit incidunt autem eos sequi? Ad
-tenetur, est delectus quia, accusantium dicta exercitationem, ducimus consequuntur eum magnam unde recusandae
-minus iusto. Fugit at, veritatis nihil doloribus, iusto dolores et illum perspiciatis deserunt nisi
-voluptatum. Accusantium vitae dolor iure neque odio! Eligendi necessitatibus temporibus exercitationem id
-expedita amet et consequatur accusantium! Cum officiis non eveniet dolores provident eligendi iusto
-consequuntur vitae, laudantium cupiditate eius minus esse animi nisi doloribus, sunt ducimus laboriosam
-voluptas tempore voluptate. Ipsam nisi quas vitae sit deleniti explicabo laudantium earum quos exercitationem
-animi quisquam, ad fuga a sed aspernatur totam officia odio tempora nostrum repudiandae consequuntur quibusdam
-eos! Dicta, voluptates aut dolor quod eligendi laboriosam et perferendis enim adipisci saepe minus asperiores
-quis cupiditate beatae vitae culpa nostrum. Reiciendis, rerum dolor totam aliquam sed tenetur dignissimos
-exercitationem accusantium, itaque repellendus cum molestias temporibus commodi ad ipsum nobis pariatur quos
-accusamus rem laborum! Eveniet architecto tenetur ab sapiente consequatur. Quidem culpa molestiae maxime,
-delectus recusandae ad fuga porro consequatur temporibus perspiciatis saepe cumque non deleniti, aperiam odio
-aspernatur illo dolor minus autem perferendis incidunt provident doloremque assumenda. Dignissimos officia
-facilis quod aliquid ad. Quaerat, iure reiciendis! Vel ab mollitia, sit eum rem non consequuntur beatae
-repellendus tenetur. Libero laboriosam aliquam illo quos quod minima obcaecati laudantium, inventore
-reiciendis sed dolore consequatur alias? Soluta facilis hic debitis quaerat vero et eaque dolores dolorum
-expedita tempore! Quae cum, id eum corporis hic quisquam sapiente ex dicta aut velit odit quas repellendus
-sint aliquid ipsa mollitia! Iusto asperiores omnis dolore? Voluptatibus dolor odit itaque repellat dignissimos
-nihil repellendus accusantium adipisci sequi sapiente deleniti at quos in consectetur nesciunt praesentium,
-veniam atque qui deserunt voluptatum. Ullam illum porro unde, mollitia impedit facere laudantium perspiciatis
-eos.
+#### CSS
+```css
+.flip-card-back p:focus-visible {
+  /* High contrast mode ignores box-shadow. Set outline to transparent to enable focus indication to high contras mode users. */
+  outline-color: transparent;
+  box-shadow: inset 0 0 3px 2px white;
+}
+```
+#### JS
+```javascript
+const flipCard = document.querySelector('.flip-card');
+const flipCardText = document.querySelector('.flip-card-back p');
+  if (flipCard.classList.contains('flipped')) {
+    // set focus to inner card text.
+    flipCard.blur();
+    flipCardText.focus();
+    // give users the possibility to tab into inner text and remove card from tab order.
+    flipCardText.setAttribute('tabindex', '0');
+    flipCard.setAttribute('tabindex', '-1');
+  } else {
+    setTimeout(() => {
+      // set focus back to the card itself.
+      flipCard.focus();
+      flipCardText.blur();
+      // remove inner card text and add card itself back to tab order.
+      flipCardText.setAttribute('tabindex', '-1');
+      flipCard.setAttribute('tabindex', '0');
+    }, 800) // align timeout with the transition time of flipping the card. Otherwise the outline will be visible while flipping the card -> looks strange.
+  }
+})
+```
+
+### ARIA attributes
+- Set `aria-label` on the flip card to let screenreaders tell the user what to do.
+
+## Keyboard
+| Key | Function |
+|------------------|-----------------------------------------|
+| <kbd>enter</kbd> | Triggers the flip card flipping toggle. |
+| <kbd>space</kbd> | Triggers the flip card flipping toggle. |
+
+## Focus Styles
+The best to do would be: _leave it like it is❗️❗️❗️_
+Users need it and you woun't be able to make it look nice on all browsers.
+
+> I was thinking about changing the visuals for focus, but after replying to a couple of comments here, I realised the issue of cross-browser consistency is NOT an issue for 99.99% of users, who only use the one browser across all sites, and so NEVER see any inconsistency at all!. Therefore, each user should be left to use their preferred browser's default :focus css, as that is the ONLY criteria for consistency for THEM. If it irks you to see the inconsistencies when cross-browser testing, just let it go. No user does such tests.
+[PantanjaliS on disq.us](http://disq.us/p/1fi6hzl)
+
+If you still have the need, feeling or pressure to change it, make sure you don't mess with the users who need it.
+As shown in the CSS snippet, leave the browsers outline as transparent for the users with high contrast mode and use `box-shadow` to style your own outline. This brings a few adavantages:
+* transparent outlines will be ignored by high contrast modes
+* box-shadow will be ignored by high contrast modes
+* box-shadow will apply to border-radius
+
+`💡` Safari ignores all that!!!😤 There is currently no way to overwrite Safaris own User-Agent-Styles.
+
+`💡💡` The pseudo class `:focus-visible` alows you to set styles only for keyboard actions -> no outlines or focus styles for mouse interactions.
+
+## Focus Management / Tab Order
+As the card has 2 sides and you want the user only to tab on the currently visible side of the card, you need to prevent the tab order from the currently NOT visible side of the card. In addition to that, if the content is bigger than the card itself, the user need to scroll inside the card.
+Therefore:
+* The flip card itself, as a button role, has a `tabindex="0"`
+* The inner card text has an initial `tabindex="-1"`
+* Make sure the tabindex switches when the card gets flipped. See JS snippet above
+
+
+## Examples
+TODO
