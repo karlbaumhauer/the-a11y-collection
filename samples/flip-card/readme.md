@@ -74,9 +74,9 @@ As shown in the CSS snippet, leave the browsers outline as transparent for the u
 * box-shadow will be ignored by high contrast modes
 * box-shadow will apply to border-radius
 
-`💡` Safari ignores all that!!!😤 There is currently no way to overwrite Safaris own User-Agent-Styles.
+`💡` Safari ignores all that!!!😤 There is currently no way to overwrite Safaris own User-Agent-Styles (or I was not able to find it... 😉).
 
-`💡💡` The pseudo class `:focus-visible` alows you to set styles only for keyboard actions -> no outlines or focus styles for mouse interactions.
+`💡💡` The pseudo class `:focus-visible` allows you to set styles only for keyboard actions -> no focus styles for mouse interactions.
 
 ## Focus Management / Tab Order
 As the card has 2 sides and you want the user only to tab on the currently visible side of the card, you need to prevent the tab order from the currently NOT visible side of the card. In addition to that, if the content is bigger than the card itself, the user need to scroll inside the card.

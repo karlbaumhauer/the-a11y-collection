@@ -1,9 +1,5 @@
 /* base styles */
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: black;
   color: white;
   min-height: 100vh;
@@ -17,7 +13,16 @@ body *:focus-visible {
   box-shadow: 0 0 3px 2px white;
 }
 
-body .content-wrapper {
+body > main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 45px);
+  padding: 20px;
+}
+
+main .content-wrapper {
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -26,12 +31,20 @@ body .content-wrapper {
   max-width: 1440px;
 }
 
+body > span {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
 zero-md {
   margin-top: 50px;
   padding: 15px;
   background-color: white;
   max-height: 80vh;
   overflow: auto;
+  width: 100%;
 }
 
 h1,
@@ -40,11 +53,16 @@ footer p {
   font-family: monospace;
 }
 
-p {
+main > p,
+main > h1 {
+  text-align: center;
+}
+
+main > p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
+main > span > a {
   display: inline-block;
   text-decoration: underline;
   text-decoration-color: white;
@@ -53,7 +71,7 @@ a {
   padding: 10px;
 }
 
-a:hover {
+main > span > a:hover {
   transform: translate(5px);
 }
 
@@ -62,6 +80,7 @@ footer {
   bottom: 0;
   position: absolute;
   padding-bottom: 10px;
+  height: 45px;
 }
 
 footer p {
