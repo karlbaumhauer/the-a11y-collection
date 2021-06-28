@@ -1,12 +1,13 @@
 /* base styles */
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: black;
   color: white;
   position: relative;
   margin: 0;
-  padding: 20px;
+  min-height: 100vh;
 }
 
 body *:focus-visible {
@@ -18,9 +19,11 @@ body *:focus-visible {
 body > main {
   display: flex;
   flex-direction: column;
+  padding: 20px;
   justify-content: center;
   align-items: center;
   max-width: 100%;
+  flex-grow: 1;
 }
 
 main .content-wrapper {
@@ -77,15 +80,13 @@ main > span > a:hover {
 }
 
 footer {
-  width: 100%;
-  bottom: 0;
-  position: absolute;
-  padding-bottom: 10px;
-  height: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid white;
+  padding: 10px 20px;
 }
 
 footer p {
-  padding-left: 10px;
   margin: 0;
 }
 
