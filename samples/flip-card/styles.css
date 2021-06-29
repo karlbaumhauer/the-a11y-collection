@@ -40,8 +40,10 @@
   transition: transform .5s ease-in-out;
 }
 
-.flip-card-inner:hover img {
-  transform: scale(1.1);
+@media (hover: hover) and (pointer: fine) {
+  .flip-card-inner:hover img {
+    transform: scale(1.1);
+  }
 }
 
 .flip-card-back {

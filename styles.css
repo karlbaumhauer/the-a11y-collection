@@ -10,6 +10,12 @@ body {
   min-height: 100vh;
 }
 
+@supports (-webkit-touch-callout: none) {
+  body {
+    min-height: -webkit-fill-available;
+  }
+}
+
 body *:focus-visible {
   /* High contrast mode ignores box-shadow. Set outline to transparent to enable focus indication to high contras mode users. */
   outline-color: transparent;
@@ -49,6 +55,7 @@ zero-md {
   max-height: 80vh;
   overflow: auto;
   width: 100%;
+  box-sizing: border-box;
 }
 
 h1,
@@ -73,6 +80,7 @@ main > span > a {
   color: white;
   transition: all .3s ease-in-out;
   padding: 10px;
+  padding-right: 0;
 }
 
 main > span > a:hover {
@@ -84,17 +92,19 @@ footer {
   flex-wrap: wrap;
   border-top: 1px solid white;
   padding: 10px 20px;
+  justify-content: center;
 }
 
 footer p {
   margin: 0;
 }
 
-@media only screen and (min-width: 1024px){
-  body {
-    height: calc(100vh - 40px);
-  }
+footer p a {
+  color: white;
+  text-decoration-color: white;
+}
 
+@media only screen and (min-width: 1024px){
   body .content-wrapper {
     flex-direction: row-reverse;
   }
