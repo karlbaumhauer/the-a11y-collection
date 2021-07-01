@@ -70,9 +70,9 @@ Users need it and you woun't be able to make it look nice on all browsers.
 
 If you still have the need, feeling or pressure to change it, make sure you don't mess with the users who need it.
 As shown in the CSS snippet, leave the browsers outline as transparent for the users with high contrast mode and use `box-shadow` to style your own outline. This brings a few adavantages:
-* transparent outlines will be ignored by high contrast modes
+* transparent outlines will be shown in high contrast modes (and not in normal mode)
 * box-shadow will be ignored by high contrast modes
-* box-shadow will apply to border-radius
+* box-shadow will apply to border-radius (bad for high contrast mode users...🥺)
 
 `💡` Safari ignores all that!!!😤 There is currently no way to overwrite Safaris own User-Agent-Styles (or I was not able to find it... 😉).
 
