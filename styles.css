@@ -79,8 +79,8 @@ main > span > a {
   text-decoration-color: white;
   color: white;
   transition: all .3s ease-in-out;
-  padding: 10px;
-  padding-right: 0;
+  padding: 10px 0;
+  margin-left: 10px;
 }
 
 main > span > a:hover {
